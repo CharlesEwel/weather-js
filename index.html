@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="humidity">
+        <h1>Get Weather Conditions From Anywhere!</h1>
+        <label for="location">Enter a location:</label>
+        <input id="location" type="text">
+        <button class="btn-success" id="weatherLocation">Get Current Humidity!</button>
+        <div class="showWeather"></div>
+      </div>
+
+      <div class="temperature">
+        <label for="location">Enter a location:</label>
+        <input id="temperature" type="text">
+        <button class="btn-success temperatureLocation" tempType="celsius">Get Current Temperature in Celsius!</button>
+        <button class="btn-success temperatureLocation" tempType="fahrenheit">Get Current Temperature in Fahrenheit!</button>
+        <div class="showTemperature"></div>
+      </div>
+
+      <div class="comparison">
+        <label for="location">Enter a location:</label>
+        <input id="comparison1" type="text" required>
+        <label for="location">Enter another location:</label>
+        <input id="comparison2" type="text" required>
+        <button class="btn-success comparisonLocation" tempType="celsius">Get Current Temperature Difference in Celsius!</button>
+        <!-- <button class="btn-success comparisonLocation" tempType="fahrenheit">Get Current Temperature in Fahrenheit!</button> -->
+        <div class="showTemperatureComparison"></div>
+      </div>
+    </div>
+  </body>
+</html>
